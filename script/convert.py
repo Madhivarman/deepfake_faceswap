@@ -6,6 +6,7 @@ from tqdm import tqdm
 from lib.cli import DirectoryProcessor,FullPaths,
 from lib.utils import BackgroundGenerator,get_folder
 
+#import plugin from the library
 from plugins.PluginLoader import PluginLoader
 
 class ConvertImage(DirectoryProcessor):
