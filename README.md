@@ -23,3 +23,14 @@ Now Face will extracted from the input image and store in **output** folder. We 
 `python faceswap.py train --input-A <path_to_folder_A> --input-B <path_to_folder_B> --model-dir <path_to_store_models> -bs 64`
 
 Now the network will start Training and save the weights in the model directory. Before running this file make sure you have installed all dependencies for Opencv, Tensorflow and Keras. The model is purely written on Tensorflow library. Make sure all libraries and plugins are available in your local directory.
+
+#### Convert Original Image to Swap the faces ####
+To Swap face run the following command
+
+`python faceswap.py convert --model-dir <path_to_stored_model> --converter GAN --detector hog --frame-ranges 10-50`
+
+If you followed every step then by running simply `python faceswap.py convert` will do the job. When you customized the code you should mention in the command prompt for better understanding.
+
+### NOTE ### 
+---
+To run this model you need heavy GPU computing power. The model should run atleast > 100000 epochs to get fair model. Try Google cloud or other GPU platform which you are familiar with. The model will train atleast >50hrs. And to generate a swap in better quality video it will take 1hour to complete **1 min** video content. Dont try to run this on local System unless you have **GPU** yourself.
