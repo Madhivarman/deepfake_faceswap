@@ -15,7 +15,7 @@ def bad_args(args):
 from lib.utils import FullHelpArgumentParser
 from script.extract import ExtractTrainingData
 from script.train import TrainingProcessor
-#from script.convert import ConvertImage
+from script.convert import ConvertImage
 
 if __name__ == '__main__':
 	#parser
@@ -28,8 +28,8 @@ if __name__ == '__main__':
 	train = TrainingProcessor(subparser,"train",
 		"To Train a model for two faces  A and B")
 	#convert src image to new one with face swapped
-	"""convert = ConvertImage(subparser,"convert",
-		"Convert a src image  into Target Image")"""
+	convert = ConvertImage(subparser,"convert",
+		"Convert a src image  into Target Image")
 
 
 	parser.set_defaults(func=bad_args)
