@@ -12,7 +12,7 @@ First we need to extract faces from the input images. To do so run the following
 
 ` python faceswap.py extract <input_model_directory> `
 
-You will have two folders in input model directory. Run twice to extract faces from the images. **python faceswap.py extract /path_to_the_file/folder_1**
+You will have two folders in input model directory. Run twice to extract faces from the images. **python faceswap.py extract /path_to_the_file/folder_1** and do same thing for **folder_2**.
 
 For **extract.py** file you will need few libraries. Check all libraries you want to run this code. One important library is **face_recognition** library which is pre-written and you can use just by `pip install face_recognition`. Any Trouble installing the library follow this link [https://github.com/ageitgey/face_recognition]
 
